@@ -1,0 +1,13 @@
+threshold: 0.50
+cases:
+  - name: search_recent_papers
+    input: "Find recent papers on retrieval-augmented generation"
+    expect_tools: [TopicSearchAgent]
+    output_contains: ["RAG"]
+    max_latency: 60s
+
+  - name: analyze_a_paper
+    input: "Summarize the key contributions of the 'Attention Is All You Need' paper"
+    expect_tools: [PaperAnalysisAgent]
+    output_contains: ["attention"]
+    max_latency: 60s

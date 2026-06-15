@@ -1,0 +1,12 @@
+threshold: 1.0
+checks:
+  - name: lists_all_tools
+    type: tools_list
+    expect_tools: [get_visa_bulletin, check_priority_date, explain_term]
+
+  - name: explain_term_works
+    type: tool_call
+    tool: explain_term
+    args: { term: "priority date" }
+    expect_no_error: true
+    max_latency: 10s

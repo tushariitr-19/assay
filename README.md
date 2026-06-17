@@ -1,7 +1,10 @@
 # assay
 
 [![Go Version](https://img.shields.io/badge/Go-1.25+-00ADD8?style=flat&logo=go)](https://golang.org)
-[![Go Reference](https://img.shields.io/badge/pkg.go.dev-reference-00ADD8?style=flat&logo=go)](https://pkg.go.dev/github.com/tushariitr-19/assay)
+[![Go Reference](https://pkg.go.dev/badge/github.com/tushariitr-19/assay.svg)](https://pkg.go.dev/github.com/tushariitr-19/assay)
+[![Go Report Card](https://goreportcard.com/badge/github.com/tushariitr-19/assay)](https://goreportcard.com/report/github.com/tushariitr-19/assay)
+[![codecov](https://codecov.io/gh/tushariitr-19/assay/branch/main/graph/badge.svg)](https://codecov.io/gh/tushariitr-19/assay)
+[![CI](https://github.com/tushariitr-19/assay/workflows/CI/badge.svg)](https://github.com/tushariitr-19/assay/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 A framework-agnostic evaluation library and CLI for Go. Point `assay` at an **MCP server** or an **AI agent**, give it a suite of checks in YAML, and it scores whether the right tools were called, with the right arguments, fast enough, and producing the expected output — then fails your CI when something regresses.

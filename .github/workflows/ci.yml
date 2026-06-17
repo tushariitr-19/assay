@@ -23,8 +23,11 @@ jobs:
       with:
         go-version: ${{ matrix.go }}
     
-    - name: Run tests
-      run: go test -v -race -coverprofile=coverage.txt -covermode=atomic ./...
+    - name: Run tests with race detector
+      run: go test -v -race ./...
+    
+    - name: Generate coverage
+      run: go test -coverprofile=coverage.txt -covermode=atomic .
     
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v4

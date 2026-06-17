@@ -1,6 +1,6 @@
 module github.com/tushariitr-19/assay
 
-go 1.24.2
+go 1.25.0
 
 require (
 	go.uber.org/zap v1.28.0
